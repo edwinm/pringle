@@ -17,6 +17,14 @@ A PRNG (pseudorandom number generator) always generates the same sequence
 of random numbers. You can change the sequence by supplying a different seed.
 This is very useful if you always want the same sequence of random numbers.
 
+## Install
+
+To install, type in the console:
+
+```shell
+npm install pringle
+```
+
 ## API
 
 ### `prng = new Prng(seed);`
