@@ -25,6 +25,22 @@ To install, type in the console:
 npm install pringle
 ```
 
+## Import
+
+Preferred: load pringle as a JavaScript module
+using a bundler like webpack or Rollup:
+
+```javascript
+import { Prng } from "pringle";
+```
+
+Load pringle dynamically as a JavaScript module
+(no bundler needed, like in [demo.js](demo.js)):
+
+```javascript
+const {Prng} = await import( "./pringle.js" );
+```
+
 ## API
 
 ### `prng = new Prng(seed);`
@@ -39,11 +55,11 @@ This is including 0, excluding 1, so `prng.rand()` can return 0, but will never 
 
 ### `const r = prng.rand(max);`
 
-Returns a floating point number between 0 and max
+Returns a floating point number between 0 and max.
 
 ### `const r = prng.rand(min, max);`
 
-Returns a floating point number between min and max
+Returns a floating point number between min and max.
 
 ### `const r = prng.iter(count);`
 
