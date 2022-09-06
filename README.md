@@ -61,6 +61,20 @@ Returns a floating point number between 0 and max.
 
 Returns a floating point number between min and max.
 
+### `const r = prng;`
+
+`pring` can be used as an endless iterator of random numbers.
+
+```javascript
+    let count = 5;
+    for (const r of prng) {
+        console.log(r);
+        if (count-- == 0) {
+            break;
+        }
+    }
+```
+
 ### `const r = prng.iter(count);`
 
 Returns an iterable returning `count` random numbers between 0 and 1.

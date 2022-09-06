@@ -12,6 +12,15 @@ async function main() {
     console.log('Return random number between 30 and 40');
     console.log(prng.rand(30, 40));
 
+    console.log('Iterate over random numbers until count of 5 is reached');
+    let count = 5;
+    for (const r of prng) {
+        console.log(r);
+        if (count-- == 0) {
+            break;
+        }
+    }
+
     console.log('Use the iterator to loop over 5 random numbers');
     for (const r of prng.iter(5)) {
         console.log(r);

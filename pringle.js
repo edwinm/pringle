@@ -1,12 +1,18 @@
 /**
- Pringle 1.0.1
+ Pringle 1.1.0
  @copyright 2022 Edwin Martin
  @license MIT
  */
 
 export class Prng {
-    constructor(seed=0) {
+    constructor(seed = 0) {
         this.seed = seed;
+    }
+
+    * [Symbol.iterator]() {
+        while (true) {
+            yield this.rand();
+        }
     }
 
     prng() {

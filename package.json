@@ -1,6 +1,6 @@
 {
   "name": "pringle",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Fast pseudorandom number generator",
   "main": "pringle.js",
   "module": "pringle.js",
