@@ -1,5 +1,5 @@
 /**
- Pringle 1.1.0
+ Pringle 1.1.1
  @copyright 2022 Edwin Martin
  @license MIT
  */

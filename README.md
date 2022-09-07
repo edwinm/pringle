@@ -61,33 +61,34 @@ Returns a floating point number between 0 and max.
 
 Returns a floating point number between min and max.
 
-### `const r = prng;`
+### `const i = prng;`
 
-`pring` can be used as an endless iterator of random numbers.
+`prng` can be used as an endless iterator of random numbers.
 
 ```javascript
-    let count = 5;
-    for (const r of prng) {
-        console.log(r);
-        if (count-- == 0) {
-            break;
-        }
+let count = 5;
+for (const r of prng) {
+    doSomething(r);
+    if (count-- == 0) {
+        break;
     }
+}
 ```
 
-### `const r = prng.iter(count);`
+### `const i = prng.iter(count);`
 
 Returns an iterable returning `count` random numbers between 0 and 1.
 
 You can use the iterable in a `for` loop like this:
 
 ```javascript
-    for (const r of prng.iter(5)) {
-        doSomething(r);
-    }
+for (const r of prng.iter(5)) {
+    doSomething(r);
+}
 ```
 
-Another example, generating an array of 5 random integers between 0 and 10:
+Another example of using the iterator is
+generating an array of 5 random integers between 0 and 10:
 
 ```javascript
 const arr = Array.from(prng.iter(5), (r) => Math.floor(r * 10));
@@ -112,7 +113,8 @@ npm run demo
 
 ## Naming
 
-Pringle is named after Aileen Pringle (1895-1989), an American actress.
+Pringle is named after the American actress Aileen Pringle (1895-1989).
+It's unrelated to some brand of potato-based crisps.
 
 ## License
 
