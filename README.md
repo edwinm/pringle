@@ -31,7 +31,7 @@ Preferred: load pringle as a JavaScript module
 using a bundler like webpack or Rollup:
 
 ```javascript
-import { Prng } from "pringle";
+import {Prng} from "pringle";
 ```
 
 Load pringle dynamically as a JavaScript module
