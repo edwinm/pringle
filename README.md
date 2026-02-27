@@ -116,6 +116,13 @@ npm run demo
 Pringle is named after the American actress Aileen Pringle (1895-1989).
 It's unrelated to some brand of potato-based crisps.
 
+## I want to know more
+
+Watch this talk by Squirrel Eiserloh, where he talks about Squirrel3,
+which is very similar to this PRNG.
+
+[Math for Game Programmers: Noise-Based RNG](https://www.gdcvault.com/play/1024365/Math-for-Game-Programmers-Noise)
+
 ## License
 
 Copyright 2022 [Edwin Martin](https://bitstorm.org/) and released under the [MIT license](LICENSE).
